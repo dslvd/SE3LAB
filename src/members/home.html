@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="eng">
   <head>
-    <link href="./src/output.css" rel="stylesheet" />
+    <link href="../output.css" rel="stylesheet" />
   </head>
   <body>
     <div class="grid grid-cols-[200px_1fr] h-screen">
@@ -9,7 +9,7 @@
         class="bg-secondary p-3 py-5 font-semibold text-xl text-white space-y-2"
       >
         <div class="flex items-center gap-2">
-          <img src="./public/logo.svg" class="h-10 w-10" />
+          <img src="../../public/logo.svg" class="h-10 w-10" />
           <p class="text-white text-2xl font-bold">Notion</p>
         </div>
         <hr class="text-primary" />
@@ -19,12 +19,12 @@
         </div>
         <div
           id="member"
-          class="px-3 py-1 hover:bg-primary rounded-2xl flex justify-between"
+          class="px-3 py-1 bg-primary rounded-2xl flex justify-between pointer-events-none"
         >
-          Members <img src="./public/drop.svg" />
+          Members <img src="../../public/drop.svg" />
         </div>
 
-        <div id="drop" class="hidden space-y-1">
+        <div id="drop" class="space-y-1">
           <div
             id="matt"
             class="px-5 py-1 ml-5 hover:bg-primary rounded-2xl font-normal text-lg"
@@ -45,11 +45,15 @@
           </div>
         </div>
       </aside>
-      <div class="bg-primary">
-        <p>hey</p>
-      </div>
+      <main class="bg-primary p-5 py-8">
+        <div
+          class="flex items-center justify-center text-white font-bold text-2xl"
+        >
+          Yesssss
+        </div>
+      </main>
     </div>
 
-    <script src="src/script/ui.js"></script>
+    <script src="../script/ui.js"></script>
   </body>
 </html>
