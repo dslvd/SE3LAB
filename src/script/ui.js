@@ -1,6 +1,3 @@
-const overview = document.getElementById("overview");
-const member = document.getElementById("member");
-const drop = document.getElementById("drop");
 const sidebar = document.getElementById("sidebar");
 
 function SideBar() {
@@ -29,7 +26,10 @@ function SideBar() {
 }
 
 sidebar.innerHTML = SideBar();
+const overview = document.getElementById("overview");
+const member = document.getElementById("member");
+const drop = document.getElementById("drop");
 
-document.getElementById("member").addEventListener("click", () => {
-  document.getElementById("drop").classList.toggle("hidden");
+member.addEventListener("click", () => {
+  drop.classList.toggle("hidden");
 });
