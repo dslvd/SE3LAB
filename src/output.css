@@ -306,10 +306,10 @@
     border-color: var(--color-third);
   }
   .bg-primary {
-    background-color: #1b4f8a;
+    background-color: #15375A;
   }
   .bg-secondary {
-    background-color: #153a55;
+    background-color: #0D2339;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -418,7 +418,7 @@
   .hover\:bg-primary {
     &:hover {
       @media (hover: hover) {
-        background-color: #1b4f8a;
+        background-color: #15375A;
       }
     }
   }
