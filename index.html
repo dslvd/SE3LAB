@@ -7,13 +7,44 @@
     <div class="grid grid-cols-[200px_1fr] h-screen">
       <div id="sidebar"> </div>
 
-      <main class="bg-primary h-full w-full flex flex-col items-center justify-center p-8">
+      <main class="bg-primary h-full w-full flex flex-col items-center justify-start p-8 pt-5">
+        <!--Title-->
         <section class="text-white text-center font-sans max-w-3xl">
-          <h1 class="text-[44px]  font-bold tracking-[-0.03em] mb-3"> Team Notion </h1>
-          <p class="text-[16px]  text-white max-w-[560px] mx-auto ml-5">
-            Meet the team behind Notion!
-          </p>
+          <h1 class="text-[44px]  font-bold "> Team Notion </h1>
+          <p class="text-[16px]  text-white max-w-140 mx-auto ml-5 mb-1"> Meet the team behind Notion! </p>
         </section>
+        <!--Team Members-->
+          <div class="grid grid-cols-3 gap-x-6 mt-10">
+            <!--Justin Gwapo-->
+            <div class="bg-secondary rounded-xl p-5 text-left">
+              <img
+                src="./public/justinjan.svg"
+                alt="Justin Jan"
+                class="w-full h-44 object-cover rounded-lg mb-3"/>
+              <h3 class="text-white font-bold text-lg">Justin Jan Dalumpines</h3>
+              <p class="text-third">Software Engineer</p>
+            </div>
+            <!--Nelson-->
+            <div class="bg-secondary rounded-xl p-5 text-left">
+              <img
+                src="./public/nelson.svg"
+                alt="Nelson Lago"
+                class="w-full h-44 object-cover rounded-lg mb-3"/>
+              <h3 class="text-white font-bold text-lg">Nelson Lago III</h3>
+              <p class="text-third">Software Engineer</p>
+            </div>
+            <!--Matthew-->
+            <div class="bg-secondary rounded-xl p-5 text-left">
+              <img
+                src="./public/matthew.jpg"
+                alt="Matthew Estilo"
+                class="w-full h-44 object-cover rounded-lg mb-3"
+              />
+              <h3 class="text-white font-bold text-lg">Matthew Estilo</h3>
+              <p class="text-third">Software Engineer</p>
+            </div>
+          </div>
+        
       </main>
     </div>
 
