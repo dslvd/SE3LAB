@@ -1,5 +1,7 @@
 const sidebar = document.getElementById("sidebar");
-const homeLink = window.location.pathname.includes("/src/members/") ? "../../index.html" : "index.html";
+const homeLink = window.location.pathname.includes("/src/members/")
+  ? "../../index.html"
+  : "index.html";
 
 function SideBar() {
   return `
@@ -27,9 +29,6 @@ function SideBar() {
 }
 
 sidebar.innerHTML = SideBar();
-const member = document.getElementById("member");
-const drop = document.getElementById("drop");
-
 const overview = document.getElementById("overview");
 const member = document.getElementById("member");
 const drop = document.getElementById("drop");
@@ -39,10 +38,6 @@ const matthew = document.getElementById("matt");
 
 member.addEventListener("click", () => {
   drop.classList.toggle("hidden");
-});
-
-overview.addEventListener("click", () => {
-  window.location.href = "../../index.html";
 });
 
 nelson.addEventListener("click", () => {
