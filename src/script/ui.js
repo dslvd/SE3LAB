@@ -1,6 +1,3 @@
-const overview = document.getElementById("overview");
-const member = document.getElementById("member");
-const drop = document.getElementById("drop");
 const sidebar = document.getElementById("sidebar");
 
 function SideBar() {
@@ -30,6 +27,27 @@ function SideBar() {
 
 sidebar.innerHTML = SideBar();
 
-document.getElementById("member").addEventListener("click", () => {
-  document.getElementById("drop").classList.toggle("hidden");
+const overview = document.getElementById("overview");
+const member = document.getElementById("member");
+const drop = document.getElementById("drop");
+const nelson = document.getElementById("nels");
+const justin = document.getElementById("just");
+const matthew = document.getElementById("matt");
+
+member.addEventListener("click", () => {
+  drop.classList.toggle("hidden");
+});
+
+overview.addEventListener("click", () => {
+  window.location.href = "../../index.html";
+});
+
+nelson.addEventListener("click", () => {
+  window.location.href = "/src/members/nelson.html";
+});
+justin.addEventListener("click", () => {
+  window.location.href = "/src/members/justin.html";
+});
+matthew.addEventListener("click", () => {
+  window.location.href = "/src/members/matthew.html";
 });

@@ -7,57 +7,86 @@
     <div class="grid grid-cols-[200px_1fr] h-screen">
       <div id="sidebar"></div>
 
-      <main class="bg-primary flex flex-col p-8 py-10 space-y-5">
-        <div class="flex gap-25">
-          <div class="flex items-center gap-2">
-            <div>Picture</div>
-            <div class="flex flex-col">
-              <div class="text-4xl font-bold text-white">Nelson Lago III</div>
-              <div class="text-xl font-semibold text-third">
-                Software Engineering
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col text-xl">
-            <div class="font-semibold text-white">TECH STACK</div>
-            <div class="flex gap-2">
-              <div class="border border-third text-third rounded-xl px-2 py-1">
-                Typescript
-              </div>
-              <div class="border border-third text-third rounded-xl px-2 py-1">
-                TailwindCSS
-              </div>
-              <div class="border border-third text-third rounded-xl px-2 py-1">
-                NextJs
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-secondary rounded-2xl px-4 py-2 flex flex-col space-y-3">
-          <div class="text-white text-lg">Key Insights</div>
+      <main
+        class="bg-primary flex flex-col p-8 py-15 space-y-5 overflow-y-hidden"
+      >
+        <div class="flex gap-5">
           <div
-            class="border-l-5 border-third bg-primary text-xl text-white px-5 p-2"
+            class="bg-secondary border border-third/50 rounded-2xl p-5 flex flex-col space-y-3"
           >
-            Idk Bruhhhhhhhhhhhhhhhhhhhhh
+            <div class="flex gap-5">
+              <img src="../../public/nelson.jpg" class="h-20 w-20" />
+              <div class="flex flex-col">
+                <div class="text-2xl font-bold text-white">Nelson Lago III</div>
+                <div class="font-semibold text-third">Software Engineering</div>
+              </div>
+            </div>
+
+            <hr class="text-third my-3" />
+
+            <div class="flex flex-col text-xl mt-5">
+              <div class="font-semibold text-white">TECH STACK</div>
+              <div class="flex gap-2 mt-3">
+                <div
+                  class="border border-third text-third rounded-xl px-2 py-1"
+                >
+                  Typescript
+                </div>
+                <div
+                  class="border border-third text-third rounded-xl px-2 py-1"
+                >
+                  TailwindCSS
+                </div>
+                <div
+                  class="border border-third text-third rounded-xl px-2 py-1"
+                >
+                  NextJs
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="text-white text-xl">I learned alot yey!</div>
+
+          <div
+            class="bg-secondary border border-third/50 rounded-2xl p-5 flex-1 flex-col space-y-3"
+          >
+            <div class="text-white text-xl font-semibold">Core Lessons</div>
+            <div
+              class="border-l-5 border-third bg-primary text-lg text-white px-5 p-2"
+            >
+              <i
+                >"My first year in this course took me from knowing absolutely
+                nothing about the field to building my own websites from
+                scratch. Every challenge I faced became a lesson that slowly
+                shaped how I think and approach problems. More than the
+                technical skills, what I gained was the confidence that I can
+                learn anything if I put in the work."</i
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="bg-secondary rounded-2xl px-4 py-2 flex flex-col space-y-3">
-          <div class="text-white text-lg">Hobbies</div>
-          <div class="grid grid-cols-3">
-            <div class="flex flex-col gap-2 items-center">
-              <p>picture</p>
-              <p class="text-third">I know music nigg</p>
+        <div
+          class="bg-secondary border border-third/50 rounded-2xl p-5 flex flex-col space-y-3"
+        >
+          <div class="text-white text-xl font-semibold">
+            Extracurriculars & Hobbies
+          </div>
+          <div class="grid grid-cols-2">
+            <div class="flex flex-col items-center justify-center">
+              <img src="../../public/choir.svg" class="h-40 w-40" />
+              <p class="text-third">
+                Music has always been a part of me, I've been singing since I
+                was 8 years old, and today I channel that passion as an active
+                member of my church choir.
+              </p>
             </div>
-            <div class="flex flex-col gap-2 items-center">
-              <p>picture</p>
-              <p class="text-third">I know music nigg</p>
-            </div>
-            <div class="flex flex-col gap-2 items-center">
-              <p>picture</p>
-              <p class="text-third">I know music nigg</p>
+            <div class="flex flex-col items-center">
+              <img src="../../public/books.svg" class="h-40 w-40" />
+              <p class="text-third">
+                When I'm not coding or singing, you'll find me deep in a manga,
+                manhwa, or manhua, losing myself in the stories and art styles
+                that make each one unique.
+              </p>
             </div>
           </div>
         </div>
@@ -65,6 +94,5 @@
     </div>
 
     <script src="../script/ui.js"></script>
-    <script src="../script/nelson.js"></script>
   </body>
 </html>
