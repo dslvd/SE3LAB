@@ -30,6 +30,27 @@ sidebar.innerHTML = SideBar();
 const member = document.getElementById("member");
 const drop = document.getElementById("drop");
 
+const overview = document.getElementById("overview");
+const member = document.getElementById("member");
+const drop = document.getElementById("drop");
+const nelson = document.getElementById("nels");
+const justin = document.getElementById("just");
+const matthew = document.getElementById("matt");
+
 member.addEventListener("click", () => {
   drop.classList.toggle("hidden");
+});
+
+overview.addEventListener("click", () => {
+  window.location.href = "../../index.html";
+});
+
+nelson.addEventListener("click", () => {
+  window.location.href = "/src/members/nelson.html";
+});
+justin.addEventListener("click", () => {
+  window.location.href = "/src/members/justin.html";
+});
+matthew.addEventListener("click", () => {
+  window.location.href = "/src/members/matthew.html";
 });
