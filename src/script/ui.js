@@ -1,4 +1,5 @@
 const sidebar = document.getElementById("sidebar");
+const homeLink = window.location.pathname.includes("/src/members/") ? "../../index.html" : "index.html";
 
 function SideBar() {
   return `
@@ -9,9 +10,9 @@ function SideBar() {
     </div>
     <hr class="text-primary" />
 
-    <div id="overview" class="px-3 py-1 hover:bg-primary rounded-2xl">
+    <a id="overview" href="${homeLink}" class="block px-3 py-1 hover:bg-primary rounded-2xl">
       Overview
-    </div>
+    </a>
     <div id="member" class="px-3 py-1 hover:bg-primary rounded-2xl flex justify-between">
       Members <img src="../../public/drop.svg" />
     </div>
@@ -26,7 +27,6 @@ function SideBar() {
 }
 
 sidebar.innerHTML = SideBar();
-const overview = document.getElementById("overview");
 const member = document.getElementById("member");
 const drop = document.getElementById("drop");
 
