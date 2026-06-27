@@ -26,6 +26,9 @@ function SideBar() {
 }
 
 sidebar.innerHTML = SideBar();
+const overview = document.getElementById("overview");
+const member = document.getElementById("member");
+const drop = document.getElementById("drop");
 
 const overview = document.getElementById("overview");
 const member = document.getElementById("member");
