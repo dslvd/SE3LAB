@@ -6,3 +6,16 @@
   --color-white: #ffffff;
   --color-third: #fab85b;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 0.15s ease-in;
+}
